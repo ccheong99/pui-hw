@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Gallery</title>
+    <link rel = "stylesheet" href = "/solution-hw1/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  </head>
   
   <body>
+    <header>
+      <a href = "index.html">
+        <img src = "/assets/logo/logo-01.svg" alt = "bun bun bake shop logo" id = "logo"/>
+      </a>
+    </header>
 
-    <h1>I am the solution to HW1!</h1>
+    <div id = "divider"></div>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+    <div id = "menu">
+      <div class = "menu-item-wrapper">
+        <a href = "index.html" class = "menu-item" id = "menu-products">PRODUCTS</a>
+      </div>
+      <div class = "menu-item-wrapper">
+        <a href = "shopping-cart.html" class = "menu-item">CART</a>
+      </div>
+    </div>
 
+    <div id = "title">Our hand-made cinnamon rolls</div>
+
+    <div id = "gallery">
+      <div>
+        <a href = "product-detail.html"><div class = "product-card">
+          <img src = "/assets/products/original-cinnamon-roll.jpg" alt = "original-cinnamon-roll" class = "product-card-img"/>
+          <div class = "product-name">Original cinnamon roll</div>
+          <div class = "product-price">$2.49</div>
+        </div></a>
+        <a href = "product-detail.html"><div class = "product-card">
+          <img src = "/assets/products/apple-cinnamon-roll.jpg" alt = "apple-cinnamon-roll" class = "product-card-img"/>
+          <div class = "product-name">Apple cinnamon roll</div>
+          <div class = "product-price">$3.49</div>
+        </div></a>
+        <a href = "product-detail.html"><div class = "product-card">
+          <img src = "/assets/products/raisin-cinnamon-roll.jpg" alt = "raisin-cinnamon-roll" class = "product-card-img"/>
+          <div class = "product-name">Raisin cinnamon roll</div>
+          <div class = "product-price">$2.99</div>
+        </div></a>
+        <a href = "product-detail.html"><div class = "product-card">
+          <img src = "/assets/products/walnut-cinnamon-roll.jpg" alt = "walnut-cinnamon-roll" class = "product-card-img"/>
+          <div class = "product-name">Walnut cinnamon roll</div>
+          <div class = "product-price">$3.49</div>
+        </div></a>
+        <a href = "product-detail.html"><div class = "product-card">
+          <img src = "/assets/products/double-chocolate-cinnamon-roll.jpg" alt = "double-chocolate-cinnamon-roll" class = "product-card-img"/>
+          <div class = "product-name">Double-chocolate cinnamon roll</div>
+          <div class = "product-price">$3.99</div>
+        </div></a>
+        <a href = "product-detail.html"><div class = "product-card">
+          <img src = "/assets/products/strawberry-cinnamon-roll.jpg" alt = "strawberry-cinnamon-roll" class = "product-card-img"/>
+          <div class = "product-name">Strawberry cinnamon roll</div>
+          <div class = "product-price">$3.99</div>
+        </div></a>
+      </div>
+    </div>
   </body>
 </html>

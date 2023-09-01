@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+    <link rel = "stylesheet" href = "/solution-hw1/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+      <a href = "index.html">
+        <img src = "/assets/logo/logo-01.svg" alt = "bun bun bake shop logo" id = "logo"/>
+      </a>
+    </header>
+
+    <div id = "divider"></div>
+
+    <div id = "menu">
+      <div class = "menu-item-wrapper">
+        <a href = "index.html" class = "menu-item" id = "menu-products">PRODUCTS</a>
+      </div>
+      <div class = "menu-item-wrapper">
+        <a href = "shopping-cart.html" class = "menu-item">CART</a>
+      </div>
+    </div>
+
+    <div id = "title">Original cinnamon roll</div>
+
+    <div id = "product-img"><img src = "/assets/products/original-cinnamon-roll.jpg" alt = "original-cinnamon-roll" id = "product-detail-img"/></div>
+    
+    <div id = "product-detail">
+        <div>
+            <p id = "detail-writing">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+            <div class = "option-section">
+                <div>Glazing:</div>
+                <select class = "option">
+                    <option>Keep original</option>
+                    <option>Sugar milk</option>
+                    <option>Vanilla milk</option>
+                    <option>Double chocolate</option>
+                </select>
+            </div>
+            <div class = "option-section">
+                <div>Pack size:</div>
+                <select class = "option">
+                    <option>1</option>
+                    <option>3</option>
+                    <option>6</option>
+                    <option>12</option>
+                </select>
+            </div>
+            <div id = "result">
+                <p id = "final-price">$2.49</p>
+                <button id = "add-to-cart-button">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>

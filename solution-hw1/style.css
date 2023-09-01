@@ -1,0 +1,134 @@
+html{
+    font-family: 'PT Sans', sans-serif;
+}
+
+#logo{
+    width: 400px;
+}
+
+#divider{
+    height: 4px;
+    background-color: black;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Menu */
+#menu{
+    display: block;
+    margin-bottom: 80px;
+}
+.menu-item-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+.menu-item{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+#menu-products{
+    background-color: yellow;
+}
+#menu-cart{
+    background-color: yellow;
+}
+
+
+/* Gallery */
+#title{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-card{
+    margin-bottom: 40px;
+    padding: 8px;
+}
+.product-card-img{
+    width: 400px;
+    border: 4px solid black;
+}
+.product-name{
+    font-size: 20px;
+    margin-top: 8px;
+    color: black;
+    text-decoration: underline;
+}
+.product-price{
+    font-size: 20px;
+    color: black;
+}
+.product-card:hover{
+    background-color: yellow;
+}
+.product-card:hover .product-name{
+    font-weight: 800;
+}
+
+
+/*Product Detail*/
+#product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product-detail-img{
+    width: 600px;
+    border: 4px solid black;
+}
+#detail-writing{
+    width: 200px;
+    margin-bottom: 48px;
+}
+.option{
+    width: 200px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.option-section{
+    margin-bottom: 24px;
+}
+#result{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    font-weight: 700;
+}
+#final-price{
+    margin-right: 20px;
+}
+#add-to-cart-button{
+    border: 2px solid black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: yellow;
+    font-weight: 700;
+}
+
+
+/*Shopping Cart*/
