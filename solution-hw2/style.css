@@ -105,6 +105,7 @@ header{
 /*Product Detail*/
 #product-detail{
     margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -117,11 +118,13 @@ header{
 }
 #detail-content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 26px;
     margin-left: 60px;
     width: 320px;
+    height: 600px;
 }
 #product-detail-img{
     width: 600px;
@@ -129,7 +132,7 @@ header{
     border: 4px solid black;
 }
 #detail-writing{
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 .option{
     width: 320px;
@@ -150,13 +153,13 @@ header{
 .option-section{
     margin-bottom: 24px;
 }
-#result{
+#result-section{
     width: 320px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 60px;
-    margin-bottom: 120px;
+    margin-bottom: 16px;
     font-weight: 600;
 }
 #final-price{
