@@ -1,42 +1,14 @@
 //JavaScript objects to represent price adaptations based on user selections.
 
-const glazingOptions = [
-    {
-        name: 'Keep Original',
-        price: 0.00,
-    },
-    {
-        name: 'Sugar milk',
-        price: 0.00,
-    },
-    {
-        name: 'Vanilla milk',
-        price: 0.50,
-    },
-    {
-        name: 'Double chocolate',
-        price: 1.50,
-    },
-];
+const glazingOptions = {
+    name: ['Keep Original', 'Sugar milk', 'Vanilla milk', 'Double chocolate'],
+    price: [0.00, 0.00, 0.50, 1.50]
+};
 
-const packSizeOptions = [
-    {
-        name: '1',
-        price: 1,
-    },
-    {
-        name: '3',
-        price: 3,
-    },
-    {
-        name: '6',
-        price: 5,
-    },
-    {
-        name: '12',
-        price: 10,
-    },
-];
+const packSizeOptions = {
+    name: ['1', '3', '6', '12'],
+    price: [1, 3, 5, 10]
+};
 
 
 //Function to populate the options of drop-down fields with objects
@@ -44,10 +16,10 @@ const packSizeOptions = [
 function populate(elementId, options){
     const dropdown = document.getElementById(elementId);
 
-    for (let i = 0; i < options.length; i++){
+    for (let i = 0; i < options.name.length; i++){
         const selectOption = document.createElement('option');
-        selectOption.value = options[i].price;
-        selectOption.textContent = options[i].name;
+        selectOption.value = options.price[i];
+        selectOption.textContent = options.name[i];
         dropdown.appendChild(selectOption);
     }
 }
