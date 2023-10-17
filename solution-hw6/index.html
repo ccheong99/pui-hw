@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Gallery</title>
+    <link rel = "stylesheet" href = "./style.css">
+    <script src="js/rollsData.js"></script>
+    <script src = "js/solution-hw5.js" defer></script> 
+  </head>
+  
+  <body>
+    <header>
+      <a href = "index.html">
+        <img src = "../assets/logo/logo-01.svg" alt = "bun bun bake shop logo" id = "logo"/>
+      </a>
+      <div id = "left-header">
+        <div id = "menu">
+          <div class = "menu-item-wrapper">
+            <a href = "index.html" class = "menu-item" id = "menu-products">PRODUCTS</a>
+          </div>
+          <div class = "menu-item-wrapper">
+            <a href = "shopping-cart.html" class = "menu-item">CART</a>
+          </div>
+        </div>
+        <div id = "divider"></div>
+        <div id = "gallery-title">Our hand-made cinnamon rolls</div>
+      </div>
+    </header>
+
+    <div id = "gallery">
+      <div class = "product-rows">
+        <a href = "product-detail.html?roll=Original">
+          <div class = "product-card">
+            <img src = "../assets/products/original-cinnamon-roll.jpg" alt = "original cinnamon roll" class = "product-card-img"/>
+            <div class = "product-name">Original cinnamon roll</div>
+            <div class = "product-price">$2.49</div>
+          </div>
+        </a>
+        <a href = "product-detail.html?roll=Apple">
+          <div class = "product-card">
+            <img src = "../assets/products/apple-cinnamon-roll.jpg" alt = "apple cinnamon roll" class = "product-card-img"/>
+            <div class = "product-name">Apple cinnamon roll</div>
+            <div class = "product-price">$3.49</div>
+          </div>
+        </a>
+        <a href = "product-detail.html?roll=Raisin">
+          <div class = "product-card">
+            <img src = "../assets/products/raisin-cinnamon-roll.jpg" alt = "raisin cinnamon roll" class = "product-card-img"/>
+            <div class = "product-name">Raisin cinnamon roll</div>
+            <div class = "product-price">$2.99</div>
+          </div>
+        </a>
+      </div>
+      <div class = "product-rows">
+        <a href = "product-detail.html?roll=Walnut">
+          <div class = "product-card">
+            <img src = "../assets/products/walnut-cinnamon-roll.jpg" alt = "walnut cinnamon roll" class = "product-card-img"/>
+            <div class = "product-name">Walnut cinnamon roll</div>
+            <div class = "product-price">$3.49</div>
+          </div>
+        </a>
+        <a href = "product-detail.html?roll=Double-Chocolate">
+          <div class = "product-card">
+            <img src = "../assets/products/double-chocolate-cinnamon-roll.jpg" alt = "double chocolate cinnamon roll" class = "product-card-img"/>
+            <div class = "product-name">Double-chocolate cinnamon roll</div>
+            <div class = "product-price">$3.99</div>
+          </div>
+        </a>
+        <a href = "product-detail.html?roll=Strawberry">
+          <div class = "product-card">
+            <img src = "../assets/products/strawberry-cinnamon-roll.jpg" alt = "strawberry cinnamon roll" class = "product-card-img"/>
+            <div class = "product-name">Strawberry cinnamon roll</div>
+            <div class = "product-price">$3.99</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

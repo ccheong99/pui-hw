@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#left-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+#logo{
+    width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 112px;
+}
+.menu-item-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+.menu-item{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin-right: 72px;
+}
+#menu-products, #menu-cart{
+    background-color: yellow;
+    font-weight: 600;
+}
+#divider{
+    height: 4px;
+    background-color: black;
+}
+#title{
+    margin-top: 72px;
+    font-size: 36px;
+    font-weight: 300;
+}
+#gallery-title{
+    margin-top: 72px;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+
+/* Gallery */
+#gallery{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-rows{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.product-card{
+    margin-bottom: 40px;
+    padding: 8px;
+}
+.product-card-img{
+    width: 285px;
+    height: 285px;
+    border: 4px solid black;
+}
+.product-name{
+    width: 285px;
+    font-size: 26px;
+    line-height: 1.3;
+    margin-top: 8px;
+    color: black;
+    text-decoration: underline;
+}
+.product-price{
+    font-size: 26px;
+    color: black;
+}
+.product-card:hover{
+    background-color: yellow;
+}
+.product-card:hover .product-name{
+    font-weight: 600;
+}
+
+
+/*Product Detail*/
+#product-detail{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#detail-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-left: 60px;
+    width: 320px;
+    height: 600px;
+}
+#product-detail-img{
+    width: 600px;
+    height: 600px;
+    border: 4px solid black;
+}
+#detail-writing{
+    margin-bottom: 64px;
+    line-height: 1.3;
+}
+#packsize-option, #glazing-option{
+    width: 320px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 8px;
+    border: 4px solid black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
+    appearance:none;
+    background-image: url("https://ifh.cc/g/yyRh2Z.png");
+    background-size: 20%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.option-section{
+    margin-bottom: 24px;
+}
+#result-section{
+    width: 320px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+#final-price{
+    margin-right: 32px;
+}
+#add-to-cart-button{
+    border: 4px solid black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: yellow;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+
+/*Shopping Cart*/
+#shopping-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 100px;
+    margin-left: 440px;
+}
+#cart-item-list{
+    display: flex;
+    flex-direction: column;
+}
+.cart-item{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 26px;
+    margin-bottom: 24px;
+    display: flex;
+}
+.cart-item-left{
+    display: flex;
+    flex-direction: row;
+}
+.cart-item-options{
+    height: 120px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3;
+}
+.cart-item-img{
+    width: 120px;
+    height: 120px;
+    border: 4px solid black;
+}
+.remove-button{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.item-price{
+    font-size: 28px;
+    height: 120px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#divider2{
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 8px;
+}
+#total-price-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+    font-size: 28px;
+    margin-top: 24px;
+}
+#total-price-section-left{
+    margin-left: 240px;
+}
+#total-price{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#checkout-button-wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+}
+#checkout-button{
+    border: 4px solid black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: yellow;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
