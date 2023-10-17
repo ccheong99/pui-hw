@@ -26,6 +26,8 @@ window.addEventListener("load", () => {
 
     // Retrieve the cart from the local storage
     const cartStorage = getCart();
+
+    console.log(cartStorage);
     
     const cart = [];
 
