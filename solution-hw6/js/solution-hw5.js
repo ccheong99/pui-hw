@@ -1,7 +1,7 @@
 //JavaScript objects to represent price adaptations based on user selections.
 
 const glazingOptions = {
-    name: ['Original', 'Sugar Milk', 'Vanilla Milk', 'Double Chocolate'],
+    name: ['Keep original', 'Sugar milk', 'Vanilla milk', 'Double chocolate'],
     price: [0.00, 0.00, 0.50, 1.50]
 };
 
@@ -59,6 +59,8 @@ function updateTotal() {
     
     let totalPrice = 0;
 
+    const cart = getCart();
+
     //Loop through price
     for (const roll of cart) {
         const addedPrice = calculatedPrice(roll.type, roll.glazing, roll.size);
@@ -74,6 +76,7 @@ function updateTotal() {
     }
 
 }
+
 
 //Write function to append the appropriate DOM elements to the shopping cart page
 

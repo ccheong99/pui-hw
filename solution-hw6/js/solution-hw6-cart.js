@@ -41,3 +41,79 @@ window.addEventListener("load", () => {
     });
 
 });
+
+
+// Function to remove roll
+
+function remove(roll) {
+
+    //Find matching item
+    const cartItems = document.querySelectorAll(".cart-item");
+    let cartItem = null;
+
+    for (const item of cartItems) {
+        if (
+            roll.type === item.querySelector(".item-name").textContent.replace(" Cinnamon Roll", "") &&
+            roll.glazing === item.querySelector(".glazing-option").textContent &&
+            roll.size === item.querySelector(".pack-size-option").textContent
+        ) {
+            cartItem = item;
+            break;
+        }
+    }
+
+    //Find index in cart
+    const index = cart.indexOf(roll);
+
+    //Remove from cart
+    if (index > -1) {
+        cart.splice(index, 1);
+    }
+
+    // Remove item from DOM
+    cartItem.remove();
+
+    //Get local storage
+    const cartStorage = getCart();
+
+    //Remove from local storage
+    const newCartStorage = cartStorage.filter((rollData) => (
+        rollData.type !== roll.type ||
+        rollData.glazing !== roll.glazing ||
+        rollData.size !== roll.size
+    ));
+
+    //Save updated cart
+    saveCart(newCartStorage);
+
+    // Update total
+    updateTotal();
+
+}
+
+
+// Add event listener to remove buttons
+
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("remove-button")) {
+        const cart = getCart();
+        const cartItem = event.target.closest(".cart-item");
+        if (cartItem) {
+            console.log("Removing item:", cartItem);
+            const itemTitle = cartItem.querySelector(".item-name").textContent;
+            const itemName = itemTitle.replace(" Cinnamon Roll", "");
+            const glazingOption = cartItem.querySelector(".glazing-option").textContent;
+            const packSizeOption = cartItem.querySelector(".pack-size-option").textContent;
+
+            const rollToRemove = cart.find((roll) => (
+                roll.type === itemName &&
+                roll.glazing === glazingOption &&
+                roll.size === packSizeOption
+            ));
+
+            if (rollToRemove) {
+                remove(rollToRemove);
+            }
+        }
+    }
+});

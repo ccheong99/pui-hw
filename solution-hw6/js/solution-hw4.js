@@ -32,7 +32,7 @@ rollImage.src = "../assets/products/" + rolls[rollType].imageFile;
 //JavaScript objects to represent price adaptations based on user selections.
 
 const glazingOptions = {
-    name: ['Keep Original', 'Sugar milk', 'Vanilla milk', 'Double chocolate'],
+    name: ['Keep original', 'Sugar milk', 'Vanilla milk', 'Double chocolate'],
     price: [0.00, 0.00, 0.50, 1.50]
 };
 
